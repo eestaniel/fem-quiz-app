@@ -7,6 +7,11 @@ interface StartMenuProps {
 }
 
 const StartMenu: React.FC<StartMenuProps> = ({ setSelectedQuiz, isDark }) => {
+
+  const handleSelectQuiz = (quiz: string) => {
+    console.log(quiz)
+    setSelectedQuiz(quiz);
+  }
   return (
       <div className={styles.container}>
         <header>
@@ -17,7 +22,9 @@ const StartMenu: React.FC<StartMenuProps> = ({ setSelectedQuiz, isDark }) => {
           <p>Pick a subject to get started.</p>
         </header>
         <section>
-          <div className={`${styles.selection} ${isDark ? 'dark_element_bg' : 'light_element_bg'}`}>
+          <div className={`${styles.selection} ${isDark ? 'dark_element_bg' : 'light_element_bg'}`}
+               onClick={() => handleSelectQuiz("html")}
+          >
             <div className={`${styles.img_container} ${styles.html}`}>
               <img
                   src="../../../public/assets/images/icon-html.svg"
@@ -26,7 +33,9 @@ const StartMenu: React.FC<StartMenuProps> = ({ setSelectedQuiz, isDark }) => {
             </div>
             <h3 className={`${isDark ? 'dark_element_text' : 'light_element_text'}`}>HTML</h3>
           </div>
-          <div className={`${styles.selection} ${isDark ? 'dark_element_bg' : 'light_element_bg'}`}>
+          <div className={`${styles.selection} ${isDark ? 'dark_element_bg' : 'light_element_bg'}`}
+               onClick={() => handleSelectQuiz("css")}
+          >
             <div className={`${styles.img_container} ${styles.css}`}>
               <img
                   src="../../../public/assets/images/icon-css.svg"
@@ -35,7 +44,10 @@ const StartMenu: React.FC<StartMenuProps> = ({ setSelectedQuiz, isDark }) => {
             </div>
             <h3 className={`${isDark ? 'dark_element_text' : 'light_element_text'}`}>CSS</h3>
           </div>
-          <div className={`${styles.selection} ${isDark ? 'dark_element_bg' : 'light_element_bg'}`}>
+          <div
+              className={`${styles.selection} ${isDark ? 'dark_element_bg' : 'light_element_bg'}`}
+              onClick={() => handleSelectQuiz("javascript")}
+          >
             <div className={`${styles.img_container} ${styles.javascript}`}>
               <img
                   src="../../../public/assets/images/icon-js.svg"
@@ -44,7 +56,10 @@ const StartMenu: React.FC<StartMenuProps> = ({ setSelectedQuiz, isDark }) => {
             </div>
             <h3 className={`${isDark ? 'dark_element_text' : 'light_element_text'}`}>Javascript</h3>
           </div>
-          <div className={`${styles.selection} ${isDark ? 'dark_element_bg' : 'light_element_bg'}`}>
+          <div
+              className={`${styles.selection} ${isDark ? 'dark_element_bg' : 'light_element_bg'}`}
+              onClick={() => handleSelectQuiz("accessibility")}
+          >
             <div className={`${styles.img_container} ${styles.accessibility}`}>
               <img
                   src="../../../public/assets/images/icon-accessibility.svg"
