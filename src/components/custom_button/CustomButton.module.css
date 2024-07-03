@@ -1,0 +1,31 @@
+.button {
+    width: 100%;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 1.5rem;
+    padding-block: 2rem;
+    position: relative; /* Ensure the button is a reference for the pseudo-element */
+
+    /* Initial state of the pseudo-element highlight on hover*/
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        transition: background-color 75ms ease; /* Smooth transition effect */
+        border-radius: inherit; /* Inherit border-radius from the button */
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        /* Change background-color on hover */
+        &::before {
+            background-color: hsla(0, 0%, 100%, 50%);
+        }
+    }
+}
