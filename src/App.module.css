@@ -10,6 +10,10 @@
   background-repeat: no-repeat;
 }
 
+main {
+  overflow-y: hidden;
+}
+
 /* Mobile backgrounds */
 .backgroundMobileLight {
   background-image: url('../public/assets/images/pattern-background-mobile-light.svg');
@@ -31,6 +35,8 @@
 
   /* Desktop backgrounds */
   @media screen and (min-width: 1201px) {
+
+
     .backgroundDesktopLight {
       background-image: url('../public/assets/images/pattern-background-desktop-light.svg');
     }
