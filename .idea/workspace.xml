@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f53124d9-646b-40ff-b706-4000a676f913" name="Changes" comment="chore: refactor">
-      <change afterPath="$PROJECT_DIR$/src/utils/QuizIconCategory.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/QuizIconCategory.tsx" afterDir="false" />
+    <list default="true" id="f53124d9-646b-40ff-b706-4000a676f913" name="Changes" comment="chore: re-add global values">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom_button/CustomButton.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom_button/CustomButton.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/quiz_component/QuizComponent.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/quiz_component/QuizComponent.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/selection_element/SelectionElement.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/selection_element/SelectionElement.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/start_menu/StartMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/start_menu/StartMenu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/theme_toggle/ThemeToggle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/theme_toggle/ThemeToggle.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/QuizIconCategory.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/QuizIconCategory.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +108,7 @@
       <workItem from="1719978298514" duration="54000" />
       <workItem from="1719978485724" duration="2180000" />
       <workItem from="1719980740585" duration="17235000" />
-      <workItem from="1720050561872" duration="9535000" />
+      <workItem from="1720050561872" duration="17829000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -177,7 +182,71 @@
       <option name="project" value="LOCAL" />
       <updated>1720061478441</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="refactor: refactor navbar to create QuizIconCategory util">
+      <option name="closed" value="true" />
+      <created>1720062908636</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720062908636</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactor: use QuizIcon util">
+      <option name="closed" value="true" />
+      <created>1720063118559</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720063118559</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: add results page">
+      <option name="closed" value="true" />
+      <created>1720064666749</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720064666749</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: fix outline on correct/incorrect submission">
+      <option name="closed" value="true" />
+      <created>1720065717152</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720065717152</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix: fix background pattern on resize">
+      <option name="closed" value="true" />
+      <created>1720066609347</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720066609347</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: add css for tablet view">
+      <option name="closed" value="true" />
+      <created>1720067692976</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720067692976</updated>
+    </task>
+    <task id="LOCAL-00016" summary="chore: remove unsused variables">
+      <option name="closed" value="true" />
+      <created>1720067704855</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720067704855</updated>
+    </task>
+    <task id="LOCAL-00017" summary="chore: re-add global values">
+      <option name="closed" value="true" />
+      <created>1720068295942</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1720068295942</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +273,15 @@
     <MESSAGE value="feat: add fetch questions" />
     <MESSAGE value="init commit" />
     <MESSAGE value="chore: refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: refactor" />
+    <MESSAGE value="refactor: refactor navbar to create QuizIconCategory util" />
+    <MESSAGE value="refactor: use QuizIcon util" />
+    <MESSAGE value="feat: add results page" />
+    <MESSAGE value="fix: fix outline on correct/incorrect submission" />
+    <MESSAGE value="fix: fix background pattern on resize" />
+    <MESSAGE value="feat: add css for tablet view" />
+    <MESSAGE value="chore: remove unsused variables" />
+    <MESSAGE value="chore: re-add global values" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: re-add global values" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

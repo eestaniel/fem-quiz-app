@@ -1,4 +1,3 @@
-/* App.module.css */
 
 .background {
   position: absolute;
@@ -21,7 +20,7 @@
 }
 
 /* Tablet backgrounds */
-@media (min-width: 768px) {
+@media screen and  (min-width: 768px) {
   .backgroundTabletLight {
     background-image: url('../public/assets/images/pattern-background-tablet-light.svg');
   }
@@ -31,7 +30,7 @@
   }
 
   /* Desktop backgrounds */
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .backgroundDesktopLight {
       background-image: url('../public/assets/images/pattern-background-desktop-light.svg');
     }

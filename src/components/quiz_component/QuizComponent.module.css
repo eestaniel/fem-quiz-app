@@ -143,7 +143,84 @@ header {
         }
       }
     }
-
-
   }
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0;
+    margin-inline: auto;
+    max-width: 40rem;
+
+    header {
+      gap: 2.5rem;
+
+      .number_question {
+        gap: 1.75rem;
+
+        .number {
+          font-size: 1.25rem;
+        }
+
+        .question {
+          font-size: 2.25rem;
+        }
+      }
+    }
+
+    .content {
+      gap: 2rem;
+
+      .options {
+        gap: 1.5rem;
+      }
+
+      .error_group {
+        img {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
+
+        .error_message {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .results {
+    gap: 4rem;
+
+    header {
+      gap: 0.5rem;
+      width: fit-content;
+
+      h2 {
+        font-size: 4rem;
+      }
+    }
+
+    .score_container {
+      gap: 2rem;
+
+      .score_group {
+        gap: 2.5rem;
+        padding: 3rem;
+
+        .score_text_group {
+
+          .score {
+            font-size: 9rem;
+          }
+
+          .score_out_of {
+            font-size: 1.5rem;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+
 }

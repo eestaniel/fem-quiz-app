@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  transition: ease all 250ms;
 
   header {
     display: flex;
@@ -59,8 +60,8 @@
       }
 
       .img_container {
-        height: 40px;
-        width: 40px;
+        height: 2.5rem;
+        width: 2.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -102,9 +103,53 @@
 
       }
     }
-
-
   }
+}
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 640px;
+    margin-inline: auto;
+    padding: 0;
 
+    header {
+      width: fit-content;
+
+      .heading {
+        h1 {
+          font-family: Rubik, serif;
+          font-weight: 300;
+          font-size: 4rem;
+          line-height: 100%;
+        }
+
+        h2 {
+          font-family: Rubik, serif;
+          font-weight: 500;
+          font-size: 4rem;
+          line-height: 100%;
+        }
+      }
+
+      p {
+        font-family: Rubik, serif;
+        font-size: 1.25rem;
+        line-height: 150%;
+        font-style: italic;
+      }
+    }
+
+    section {
+      gap: 1.5rem;
+
+      .selection {
+        height: 5rem;
+
+        .img_container {
+          height: 3.5rem;
+          width: 3.5rem;
+        }
+      }
+    }
+  }
 }

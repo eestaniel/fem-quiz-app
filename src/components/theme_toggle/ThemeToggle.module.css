@@ -1,7 +1,7 @@
 .theme_container {
-  border-radius: 1.5rem;
   max-width: 5rem;
-  max-height: 1.25rem;
+  min-height: 1.25rem;
+  transition: ease all 250ms;
 
 
   &:hover {
@@ -52,3 +52,23 @@
 }
 
 
+@media screen and (min-width: 768px) {
+  .theme_container {
+    max-width: 8rem;
+    min-height: 1.75rem;
+  }
+
+  .toggle_group {
+    gap: 1rem;
+    min-height: 1.75rem;
+
+    img {
+     height: 1.5rem;
+    }
+
+    .toggle {
+      width: 3rem;
+      height: 1.75rem;
+    }
+  }
+}
