@@ -90,6 +90,18 @@
   background-color: var(--white);
 }
 
+.light_progress_bg {
+  background-color: var(--white);
+}
+
+.light-error-text {
+  color: var(--red);
+}
+
+.light_number_header_text {
+  color: var(--grey-navy);
+}
+
 
 /* Dark Theme */
 .dark {
@@ -104,6 +116,17 @@
   color: var(--white);
 }
 
+.dark_progress_bg {
+  background-color: var(--navy);
+}
+
+.dark_error_text {
+  color: white;
+}
+
+.dark_number_header_text {
+  color: var(--light-bluish);
+}
 
 
 

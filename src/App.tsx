@@ -10,16 +10,17 @@ import pattern_bg_tablet_light from "../public/assets/images/pattern-background-
 import pattern_bg_desktop_dark from "../public/assets/images/pattern-background-desktop-dark.svg";
 import pattern_bg_desktop_light from "../public/assets/images/pattern-background-desktop-light.svg";
 import data from "./data.json";
-import QuizComponent from "./components/quiz/QuizComponent"; // Make sure to import your QuizComponent
+import QuizComponent from "./components/quiz_component/QuizComponent.tsx";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
   const [selectedQuiz, setSelectedQuiz] = useState<string>("");
   const [questions, setQuestions] = useState<any[]>([]);
+  const [correctAnswers, setCorrectAnswers] = useState<number>(0);
 
   const handleSetSelectedQuiz = (quiz: string) => {
     setSelectedQuiz(quiz);
-    const selectedQuizData = data.quizzes.find(q => q.title.toLowerCase() === quiz.toLowerCase());
+    const selectedQuizData = data.quizzes.find(q => q.title === quiz);
     if (selectedQuizData) {
       setQuestions(selectedQuizData.questions);
     } else {
@@ -27,12 +28,23 @@ function App() {
     }
   };
 
-  const renderSwitch = (): JSX.Element => {
+  const renderSwitch = () => {
     if (selectedQuiz) {
-
+      return <QuizComponent isDark={isDark} questions={questions} />;
     }
     return <StartMenu isDark={isDark} setSelectedQuiz={handleSetSelectedQuiz} />;
   };
+
+  useEffect(() => {
+    // handle dark mode, add body class dark or light
+    if (isDark) {
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+    } else {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+    }
+  }, [isDark]);
 
   useEffect(() => {
     console.log(questions)

@@ -10,7 +10,7 @@ interface ThemeToggleProps {
   setIsDark: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const ThemeToggle: React.FC<ThemeToggleProps> = ({ isDark, setIsDark }) => {
+const ThemeToggle= ({ isDark, setIsDark }: ThemeToggleProps) => {
   const handleToggleTheme = () => {
     setIsDark(!isDark);
   };

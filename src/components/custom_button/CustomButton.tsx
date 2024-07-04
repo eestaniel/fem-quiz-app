@@ -1,16 +1,25 @@
-import React from "react";
-import styles from './CustomButton.module.css';
+
+import styles from "./CustomButton.module.css";
 
 interface CustomButtonProps {
-    label: string;
+  label: string;
+  handleSubmission?: () => void;
 }
 
-const CustomButton:React.FC<CustomButtonProps> = ({label}) => {
-    return (
-        <>
-            <button className={`${styles.button} heading-s`}>{label}</button>
-        </>
-    );
+const CustomButton = ({ label, handleSubmission }: CustomButtonProps) => {
+
+
+
+  return (
+    <>
+      <button
+        className={`${styles.button}`}
+        onClick={handleSubmission}
+      >
+        {label}
+      </button>
+    </>
+  );
 };
 
 export default CustomButton;

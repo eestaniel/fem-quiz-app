@@ -3,9 +3,16 @@
     background-color: var(--purple);
     color: var(--white);
     border: none;
-    border-radius: 1.5rem;
-    padding-block: 2rem;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
     position: relative; /* Ensure the button is a reference for the pseudo-element */
+    height: 3.5rem;
+
+    font-family: Rubik, serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 100%;
+    color: var(--white);
 
     /* Initial state of the pseudo-element highlight on hover*/
     &::before {
