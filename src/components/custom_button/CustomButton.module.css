@@ -12,7 +12,6 @@
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 100%;
-    color: var(--white);
 
     /* Initial state of the pseudo-element highlight on hover*/
     &::before {

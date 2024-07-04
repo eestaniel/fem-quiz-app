@@ -26,5 +26,5 @@ dist-ssr
 # figma files
 .fig
 .xml
-.idea
 *.xml
+workspace.xml
