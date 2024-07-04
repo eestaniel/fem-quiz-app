@@ -23,6 +23,57 @@
   --green: hsl(151, 70%, 50%);
   --red: hsl(0, 82%, 63%);
 
+  /* Typography */
+
+  .display {
+    font-family: Rubik, serif;
+    font-weight: 500;
+    font-size: 9rem;
+    line-height: 100%;
+  }
+
+  .heading-l-bold {
+    font-family: Rubik, serif;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 100%;
+  }
+
+  .heading-l-regular {
+    font-family: Rubik, serif;
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 100%;
+  }
+
+  .heading-m {
+    font-family: Rubik, serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 100%;
+  }
+
+  .heading-s {
+    font-family: Rubik, serif;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 100%;
+  }
+
+  .body-m {
+    font-family: Rubik, serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 150%;
+  }
+
+  .body-s {
+    font-family: Rubik, serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 150%;
+    font-style: italic;
+  }
 
 }
 
@@ -76,8 +127,6 @@
 .dark_number_header_text {
   color: var(--light-bluish);
 }
-
-
 
 
 
