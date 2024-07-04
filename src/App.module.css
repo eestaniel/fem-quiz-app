@@ -23,6 +23,13 @@
 
 /* Tablet backgrounds */
 @media screen and  (min-width: 768px) {
+
+  main {
+    place-content: center;
+    min-height: 100vh;
+    padding-bottom: 17rem;
+  }
+
   .backgroundTabletLight {
     background-image: url('../public/assets/images/pattern-background-tablet-light.svg');
   }
@@ -33,7 +40,9 @@
 
   /* Desktop backgrounds */
   @media screen and (min-width: 1201px) {
-
+    main {
+      padding-bottom: 18rem;
+    }
 
     .backgroundDesktopLight {
       background-image: url('../public/assets/images/pattern-background-desktop-light.svg');
