@@ -222,5 +222,41 @@ header {
       }
     }
   }
+}
 
+@media screen and (min-width: 1201px) {
+  .container {
+    flex-direction: row;
+    max-width: 1160px;
+    justify-content: space-between;
+
+    header {
+      max-width: 29rem;
+      justify-content: space-between;
+      max-height: 28.25rem;
+    }
+
+    .content {
+      max-width: 35.25rem;
+      flex-grow: 1;
+    }
+
+
+    .results {
+      flex-direction: row;
+      flex-grow: 1;
+      justify-content: space-between;
+
+      header {
+        height: fit-content;
+        justify-content: revert;
+        width: 50%;
+      }
+
+      .score_container {
+        max-width: 35.25rem;
+        flex-grow: 1;
+      }
+    }
+  }
 }

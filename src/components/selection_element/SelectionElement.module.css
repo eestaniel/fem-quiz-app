@@ -108,6 +108,10 @@
       max-height: 2.5rem;
     }
   }
+}
 
-
+@media screen and (min-width: 1201px) {
+  .selection_container {
+    padding: 1.125rem 1.25rem;
+  }
 }

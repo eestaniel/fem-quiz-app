@@ -30,7 +30,7 @@
   }
 
   /* Desktop backgrounds */
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1201px) {
     .backgroundDesktopLight {
       background-image: url('../public/assets/images/pattern-background-desktop-light.svg');
     }

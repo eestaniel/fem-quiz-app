@@ -108,7 +108,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 640px;
+    max-width: 40rem;
     margin-inline: auto;
     padding: 0;
 
@@ -144,6 +144,7 @@
 
       .selection {
         height: 5rem;
+        border-radius: 1.5rem;
 
         .img_container {
           height: 3.5rem;
@@ -152,4 +153,31 @@
       }
     }
   }
+}
+
+@media screen and (min-width: 1201px) {
+  .container {
+    flex-direction: row;
+    max-width: 72.5rem;
+    justify-content: space-between;
+
+    header {
+      gap: 3rem;
+      width: fit-content;
+      height: fit-content;
+
+    }
+
+    section {
+      width: 50%;
+
+      .selection {
+        max-width: 35.25rem;
+        height: 6rem;
+
+      }
+    }
+  }
+
+
 }

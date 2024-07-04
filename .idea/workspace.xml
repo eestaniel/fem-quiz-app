@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f53124d9-646b-40ff-b706-4000a676f913" name="Changes" comment="chore: re-add global values">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f53124d9-646b-40ff-b706-4000a676f913" name="Changes" comment="feat: add tablet view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/custom_button/CustomButton.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom_button/CustomButton.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/quiz_component/QuizComponent.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/quiz_component/QuizComponent.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/selection_element/SelectionElement.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/selection_element/SelectionElement.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/start_menu/StartMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/start_menu/StartMenu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/theme_toggle/ThemeToggle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/theme_toggle/ThemeToggle.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/QuizIconCategory.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/QuizIconCategory.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +104,7 @@
       <workItem from="1719978298514" duration="54000" />
       <workItem from="1719978485724" duration="2180000" />
       <workItem from="1719980740585" duration="17235000" />
-      <workItem from="1720050561872" duration="17829000" />
+      <workItem from="1720050561872" duration="20780000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -246,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720068295942</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: add tablet view">
+      <option name="closed" value="true" />
+      <created>1720071390733</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1720071390733</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +285,8 @@
     <MESSAGE value="feat: add css for tablet view" />
     <MESSAGE value="chore: remove unsused variables" />
     <MESSAGE value="chore: re-add global values" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: re-add global values" />
+    <MESSAGE value="feat: add tablet view" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add tablet view" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
