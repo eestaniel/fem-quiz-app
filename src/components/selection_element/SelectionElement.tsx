@@ -14,11 +14,12 @@ interface SelectionElementProps {
   displayResult?: boolean;
   error: string;
   setError: React.Dispatch<React.SetStateAction<string>>;
+  isDark: string;
 }
 
 const SelectionElement = ({
   fontColor,
-  bgColor,
+  isDark,
   letter,
   label,
   activeSelection,
@@ -31,19 +32,25 @@ const SelectionElement = ({
   const handleSelection = () => {
     if (!displayResult) {
       setActiveSelection(label);
-
       if (error) {
         setError("");
       }
     }
   };
 
+  const showCorrectIcon = displayResult && isCorrect;
+  const showIncorrectIcon =
+    displayResult && !isCorrect && activeSelection === label;
+
   return (
     <div
       className={`
-      ${styles.selection_container} 
-      ${bgColor} ${activeSelection === label && styles.is_active}
-      ${displayResult && styles.disabled}
+        ${styles.selection_container}
+        ${activeSelection === label && !displayResult ? styles.is_active : ""}
+        ${showCorrectIcon || showIncorrectIcon ? (isCorrect ? styles.correct : styles.incorrect) : ""}
+        ${displayResult ? styles.disabled : ""}
+        ${isDark}
+        
       `}
       onClick={handleSelection}
     >
@@ -52,10 +59,10 @@ const SelectionElement = ({
         <div className={`${styles.selection_label} ${fontColor}`}>{label}</div>
       </div>
       <div className={styles.result}>
-        {displayResult && isCorrect ? (
-          <img src={correct_icon} alt="correct_icon" />
-        ) : displayResult && !isCorrect ? (
-          <img src={incorrect_icon} alt="incorrect_icon" />
+        {showCorrectIcon ? (
+          <img src={correct_icon} alt="Correct" />
+        ) : showIncorrectIcon ? (
+          <img src={incorrect_icon} alt="Incorrect" />
         ) : null}
       </div>
     </div>

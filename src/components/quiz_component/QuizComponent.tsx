@@ -72,6 +72,7 @@ const QuizComponent = ({
             isCorrect={option === correctAnswer}
             error={error}
             setError={setError}
+            isDark={isDark ? "dark_element_bg" : "light_element_bg"}
             fontColor={isDark ? "dark_element_text" : "light_element_text"}
             bgColor={isDark ? "dark_element_bg" : "light_element_bg"}
           />
