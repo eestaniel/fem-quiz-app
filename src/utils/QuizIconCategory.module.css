@@ -52,12 +52,29 @@
 @media screen and (min-width: 768px) {
   .container {
     .img_container {
+
       height: 3.5rem;
       width: 3.5rem;
+    }
+
+    .html, .css, .javascript, .accessibility {
+      border-radius: 0.75rem;
     }
 
     h4 {
       font-size: 1.75rem;
     }
+  }
+}
+
+
+@media screen and (min-width: 1201px) {
+  .container {
+
+    .html, .css, .javascript, .accessibility {
+      border-radius: 0.5rem;
+    }
+
+
   }
 }
