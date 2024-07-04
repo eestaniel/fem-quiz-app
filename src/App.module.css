@@ -1,12 +1,43 @@
-.light {
-  background-color: var(--light-grey);
-}
-
-.dark {
-  background-color: var(--dark-navy);
-}
+/* App.module.css */
 
 .background {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Mobile backgrounds */
+.backgroundMobileLight {
+  background-image: url('../public/assets/images/pattern-background-mobile-light.svg');
+}
+
+.backgroundMobileDark {
+  background-image: url('../public/assets/images/pattern-background-mobile-dark.svg');
+}
+
+/* Tablet backgrounds */
+@media (min-width: 768px) {
+  .backgroundTabletLight {
+    background-image: url('../public/assets/images/pattern-background-tablet-light.svg');
+  }
+
+  .backgroundTabletDark {
+    background-image: url('../public/assets/images/pattern-background-tablet-dark.svg');
+  }
+
+  /* Desktop backgrounds */
+  @media (min-width: 1024px) {
+    .backgroundDesktopLight {
+      background-image: url('../public/assets/images/pattern-background-desktop-light.svg');
+    }
+
+    .backgroundDesktopDark {
+      background-image: url('../public/assets/images/pattern-background-desktop-dark.svg');
+    }
+  }
 }
