@@ -8,7 +8,7 @@ import QuizComponent from "./components/quiz_component/QuizComponent";
 import { shuffleArray } from "./utils/shuffle";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [selectedQuiz, setSelectedQuiz] = useState<string>("");
   const [questions, setQuestions] = useState<any[]>([]);
 
