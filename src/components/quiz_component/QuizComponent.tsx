@@ -137,7 +137,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({
           {renderButton}
           {error && (
               <div className={styles.error_group}>
-                <img src="/public/assets/images/icon-error.svg" alt="error icon" />
+                <img src="/assets/images/icon-error.svg" alt="error icon" />
                 <p className={`${styles.error_message} ${isDark ? "dark_error_text" : "light-error-text"}`}>
                   {error}
                 </p>
