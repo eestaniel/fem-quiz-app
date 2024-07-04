@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/w-react-typescript-vite-_9jb_1gLIk)
+- Live Site URL: [Live Site](https://quiz-app-ee.vercel.app/)
 
 ## My process
 
