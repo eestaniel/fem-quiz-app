@@ -77,6 +77,10 @@
 
 }
 
+body {
+  min-height: 100vh;
+}
+
 /* Light Theme */
 .light {
   background-color: var(--light-grey);
