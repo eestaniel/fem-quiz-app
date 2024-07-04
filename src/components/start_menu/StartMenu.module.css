@@ -170,6 +170,7 @@
 
     section {
       width: 50%;
+      align-items: end;
 
       .selection {
         max-width: 35.25rem;
