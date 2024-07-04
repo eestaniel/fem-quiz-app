@@ -74,8 +74,8 @@
   outline: 3px solid var(--green);
 
   .selection_letter {
-    background-color: var(--green);
-    color: var(--white);
+    background-color: var(--green) !important;
+    color: var(--white) !important;
   }
 }
 
@@ -83,8 +83,8 @@
   outline: 3px solid var(--red);
 
   .selection_letter {
-    background-color: var(--red);
-    color: var(--white);
+    background-color: var(--red) !important;
+    color: var(--white) !important;
   }
 }
 
