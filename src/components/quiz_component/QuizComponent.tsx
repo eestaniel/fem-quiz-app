@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import styles from "./QuizComponent.module.css";
 import SelectionElement from "../selection_element/SelectionElement.tsx";
 import CustomButton from "../custom_button/CustomButton.tsx";
+import QuizIconCategory from "../../utils/QuizIconCategory.tsx";
+import React from "react";
 
 interface Question {
   question: string;
@@ -12,9 +14,16 @@ interface Question {
 interface QuizComponentProps {
   isDark: boolean;
   questions: Question[];
+  selectedQuiz: string;
+  setSelectedQuiz: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const QuizComponent = ({ isDark, questions }: QuizComponentProps) => {
+const QuizComponent = ({
+  isDark,
+  questions,
+  selectedQuiz,
+  setSelectedQuiz,
+}: QuizComponentProps) => {
   const [currentQuestion, setCurrentQuestion] = useState<number>(1);
   const [progress, setProgress] = useState<number>(1);
   const [activeSelection, setActiveSelection] = useState<string>("");
@@ -96,8 +105,8 @@ const QuizComponent = ({ isDark, questions }: QuizComponentProps) => {
   };
 
   const handleResults = () => {
-    setShowResults(true)
-  }
+    setShowResults(true);
+  };
 
   const renderButton = () => {
     if (!checkAnswer) {
@@ -124,6 +133,10 @@ const QuizComponent = ({ isDark, questions }: QuizComponentProps) => {
         );
       }
     }
+  };
+
+  const handleGoToStartMenu = () => {
+    setSelectedQuiz("");
   };
 
   const renderQuiz = () => {
@@ -172,25 +185,53 @@ const QuizComponent = ({ isDark, questions }: QuizComponentProps) => {
     return (
       <div className={styles.results}>
         <header>
-          <h2 className={`${styles.results_header_1} ${isDark? 'dark_element_text': 'light_element_text'}`}>Quiz completed</h2>
-          <h2 className={`${styles.results_header_2} ${isDark? 'dark_element_text': 'light_element_text'}`}>You scored...</h2>
+          <h2
+            className={`${styles.results_header_1} ${isDark ? "dark_element_text" : "light_element_text"}`}
+          >
+            Quiz completed
+          </h2>
+          <h2
+            className={`${styles.results_header_2} ${isDark ? "dark_element_text" : "light_element_text"}`}
+          >
+            You scored...
+          </h2>
         </header>
 
         <section className={styles.score_container}>
-          div.
+          <div
+            className={`${styles.score_group} ${isDark ? "dark_progress_bg" : "light_progress_bg"}`}
+          >
+            <div className={styles.icon_container}>
+              {QuizIconCategory({ isDark, quizType: selectedQuiz })}
+            </div>
+
+            <div className={styles.score_text_group}>
+              <p
+                className={`${styles.score} ${isDark ? "dark_element_text" : "light_element_text"}`}
+              >
+                {amountCorrect}
+              </p>
+              <p
+                className={`${styles.score_out_of} ${isDark ? "dark_number_header_text" : "light_number_header_text"}`}
+              >
+                out of {questions.length}
+              </p>
+            </div>
+          </div>
+
+          <CustomButton
+            label={"Play Again"}
+            handleSubmission={handleGoToStartMenu}
+          />
         </section>
-        <CustomButton
-          label={"Try Again"}
-          handleSubmission={() => setShowResults(false)}
-        />
       </div>
     );
-  }
+  };
 
   return (
-      <div className={styles.container}>
-        {showResults ? renderResults() : renderQuiz()}
-      </div>
+    <div className={styles.container}>
+      {showResults ? renderResults() : renderQuiz()}
+    </div>
   );
 };
 

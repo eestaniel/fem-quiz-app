@@ -29,7 +29,7 @@ function App() {
 
   const renderSwitch = () => {
     if (selectedQuiz) {
-      return <QuizComponent isDark={isDark} questions={questions} />;
+      return <QuizComponent isDark={isDark} questions={questions} selectedQuiz={selectedQuiz} setSelectedQuiz={setSelectedQuiz} />;
     }
     return <StartMenu isDark={isDark} setSelectedQuiz={handleSetSelectedQuiz} />;
   };
