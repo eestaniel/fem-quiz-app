@@ -1,4 +1,3 @@
-
 import styles from "./CustomButton.module.css";
 
 interface CustomButtonProps {
@@ -6,19 +5,14 @@ interface CustomButtonProps {
   handleSubmission?: () => void;
 }
 
-const CustomButton = ({ label, handleSubmission }: CustomButtonProps) => {
-
-
-
+const CustomButton: React.FC<CustomButtonProps> = ({
+  label,
+  handleSubmission,
+}) => {
   return (
-    <>
-      <button
-        className={`${styles.button}`}
-        onClick={handleSubmission}
-      >
-        {label}
-      </button>
-    </>
+    <button className={styles.button} onClick={handleSubmission}>
+      {label}
+    </button>
   );
 };
 

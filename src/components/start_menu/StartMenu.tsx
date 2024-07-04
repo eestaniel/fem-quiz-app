@@ -1,15 +1,16 @@
 import styles from "./StartMenu.module.css";
-import QuizIconCategory from "../../utils/QuizIconCategory.tsx";
+import QuizIconCategory from "../../utils/QuizIconCategory";
 
 interface StartMenuProps {
   setSelectedQuiz: (quiz: string) => void;
   isDark: boolean;
 }
 
-const StartMenu = ({ setSelectedQuiz, isDark }: StartMenuProps) => {
+const StartMenu: React.FC<StartMenuProps> = ({ setSelectedQuiz, isDark }) => {
   const handleSelectQuiz = (quiz: string) => {
     setSelectedQuiz(quiz);
   };
+
   return (
     <div className={styles.container}>
       <header>
@@ -32,30 +33,15 @@ const StartMenu = ({ setSelectedQuiz, isDark }: StartMenuProps) => {
         </p>
       </header>
       <section>
-        <div
-          className={`${styles.selection} ${isDark ? "dark_element_bg" : "light_element_bg"}`}
-          onClick={() => handleSelectQuiz("HTML")}
-        >
-          {QuizIconCategory({ isDark, quizType: "HTML" })}
-        </div>
-        <div
-          className={`${styles.selection} ${isDark ? "dark_element_bg" : "light_element_bg"}`}
-          onClick={() => handleSelectQuiz("CSS")}
-        >
-          {QuizIconCategory({ isDark, quizType: "CSS" })}
-        </div>
-        <div
-          className={`${styles.selection} ${isDark ? "dark_element_bg" : "light_element_bg"}`}
-          onClick={() => handleSelectQuiz("JavaScript")}
-        >
-          {QuizIconCategory({ isDark, quizType: "JavaScript" })}
-        </div>
-        <div
-          className={`${styles.selection} ${isDark ? "dark_element_bg" : "light_element_bg"}`}
-          onClick={() => handleSelectQuiz("Accessibility")}
-        >
-          {QuizIconCategory({ isDark, quizType: "Accessibility" })}
-        </div>
+        {["HTML", "CSS", "JavaScript", "Accessibility"].map((quiz) => (
+          <div
+            key={quiz}
+            className={`${styles.selection} ${isDark ? "dark_element_bg" : "light_element_bg"}`}
+            onClick={() => handleSelectQuiz(quiz)}
+          >
+            {QuizIconCategory({ isDark, quizType: quiz })}
+          </div>
+        ))}
       </section>
     </div>
   );

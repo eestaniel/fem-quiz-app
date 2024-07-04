@@ -1,7 +1,7 @@
-import React  from "react";
-import ThemeToggle from "../theme_toggle/ThemeToggle.tsx";
+import React from "react";
+import ThemeToggle from "../theme_toggle/ThemeToggle";
 import styles from "./Navbar.module.css";
-import QuizIconCategory from "../../utils/QuizIconCategory.tsx";
+import QuizIconCategory from "../../utils/QuizIconCategory";
 
 interface NavbarProps {
   isDark: boolean;
@@ -9,16 +9,12 @@ interface NavbarProps {
   selectedQuiz: string;
 }
 
-const Navbar = ({ isDark, setIsDark, selectedQuiz }:NavbarProps) => {
-
-
-
-
+const Navbar: React.FC<NavbarProps> = ({ isDark, setIsDark, selectedQuiz }) => {
   return (
-      <div className={styles.nav_container}>
-          {QuizIconCategory({ isDark, quizType: selectedQuiz })}
-        <ThemeToggle isDark={isDark} setIsDark={setIsDark} />
-      </div>
+    <div className={styles.nav_container}>
+      {QuizIconCategory({ isDark, quizType: selectedQuiz })}
+      <ThemeToggle isDark={isDark} setIsDark={setIsDark} />
+    </div>
   );
 };
 
