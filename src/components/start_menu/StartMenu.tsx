@@ -8,7 +8,6 @@ interface StartMenuProps {
 
 const StartMenu = ({ setSelectedQuiz, isDark }: StartMenuProps) => {
   const handleSelectQuiz = (quiz: string) => {
-    console.log(quiz);
     setSelectedQuiz(quiz);
   };
   return (

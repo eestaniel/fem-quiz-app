@@ -48,10 +48,6 @@ function App() {
     document.body.classList.add(className);
   }, [isDark]);
 
-  useEffect(() => {
-    console.log(questions);
-  }, [questions]);
-
   return (
       <main>
         <div className={backgroundClass} />

@@ -43,7 +43,6 @@ const QuizComponent = ({
     if (questions.length > 0) {
       if (!correctAnswer) {
         setCorrectAnswer(questions[currentQuestion - 1].answer);
-        console.log(questions[currentQuestion - 1].answer);
       }
 
       return (
