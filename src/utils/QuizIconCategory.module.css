@@ -1,0 +1,51 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+
+  .img_container {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+
+  }
+
+  .html {
+    background-color: hsl(22 100% 96%);
+    border-radius: 0.2rem;
+  }
+
+  .css {
+    background-color: hsl(151 87% 94%);
+    border-radius: 0.25rem;
+  }
+
+  .javascript {
+    background-color: hsl(223 100% 96%);
+    border-radius: 0.2rem;
+  }
+
+  .accessibility {
+    background-color: #F6E7FF;
+    border-radius: 0.2rem;
+  }
+
+  h4 {
+    font-family: Rubik, serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 100%;
+  }
+
+
+}

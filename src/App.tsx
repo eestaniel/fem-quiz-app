@@ -16,7 +16,6 @@ function App() {
   const [isDark, setIsDark] = useState(false);
   const [selectedQuiz, setSelectedQuiz] = useState<string>("");
   const [questions, setQuestions] = useState<any[]>([]);
-  const [correctAnswers, setCorrectAnswers] = useState<number>(0);
 
   const handleSetSelectedQuiz = (quiz: string) => {
     setSelectedQuiz(quiz);
