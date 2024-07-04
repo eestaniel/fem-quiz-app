@@ -10,6 +10,12 @@
   background-repeat: no-repeat;
 }
 
+main {
+  place-content: center;
+  min-height: 100vh;
+  padding-bottom: 17rem;
+}
+
 
 
 /* Mobile backgrounds */
@@ -25,8 +31,6 @@
 @media screen and  (min-width: 768px) {
 
   main {
-    place-content: center;
-    min-height: 100vh;
     padding-bottom: 17rem;
   }
 
